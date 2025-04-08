@@ -25,31 +25,33 @@
         </div>  
 
       <div class="row">
-        <img src="/assets/images/webpage/miccai2024-logo.png" alt="miccai2024-logo" style=”max-width:150px;max-height:150px;" id="hp"/>
+        <img src="/assets/images/webpage/miccai2025-logo.png" alt="miccai2025-logo" style=”max-width:150px;max-height:150px;" id="hp"/>
         <div class="column">
-        <h2 class="project-tagline"><MICCAI2023> DEMI @ MICCAI2024 Workshop, October, 2024 </h2>  
+        <h2 class="project-tagline"><MICCAI2023> DEMI @ MICCAI2025 Workshop, September, 2025 </h2>  
         </div>
         <div class="column">
+        <a href="#workshop-description" class="btn"> <strong>Workshop Description</strong></a>
+
         <a href="#Workshop themes" class="btn"> <strong>Workshop Themes</strong></a>
-        <a href="#Keynote speakers" class="btn"> <strong>Keynote Speakers</strong></a>
+        <!-- <a href="#Keynote speakers" class="btn"> <strong>Keynote Speakers</strong></a>
         <a href="#Important Dates" class="btn"> <strong>Important dates </strong></a>
         <a href="#Submission" class="btn"> <strong>Submission</strong></a>
-        <a href="#Workshop sessions" class="btn"> <strong>Sessions/Agenda</strong></a>
+        <a href="#Workshop sessions" class="btn"> <strong>Sessions/Agenda</strong></a> -->
         </div>
       </div>
         </header>
 
 
         <main id="content" class="main-content" role="main">
-          <h1 id="New">Recent updates</h1>
-          <ul> 
-            <li><p align="justify"> <strong> <a href="https://link.springer.com/book/10.1007/978-3-031-73748-0"> Second DEMI, MICCAI 2024, Proceedings </a> </strong> 
-            <li><p align="justify"> <a href="#Workshop sessions"> <strong>Program  update</strong></a> </p>  </li>
-            <li><p align="justify"> <strong> Submissions opens on</strong>: 2nd May 2024 <!-- <a href="https://cmt3.research.microsoft.com/DEMI2023"> CMT for DEMI@MICCAI2023</a></p>  </li> -->
+          <!-- <h1 id="New">Recent updates</h1> -->
+          <!-- <ul>  -->
+            <!-- <li><p align="justify"> <strong> <a href="https://link.springer.com/book/10.1007/978-3-031-73748-0"> Second DEMI, MICCAI 2024, Proceedings </a> </strong>  -->
+            <!-- <li><p align="justify"> <a href="#Workshop sessions"> <strong>Program  update</strong></a> </p>  </li> -->
+            <!-- <li><p align="justify"> <strong> Submissions opens on</strong>: 2nd May 2024  -->
             <!-- <li><p align="justify"> <strong> Submit your 8-10 page MICCAI format paper here (please read <a href="#Submission"> <strong>submission instructions</strong></a>) </strong> </p>  </li> -->
-          </ul>
+          <!-- </ul> -->
             
-         <h1 id="Workshop sessions">Workshop Programme</h1>
+         <!-- <h1 id="Workshop sessions">Workshop Programme</h1>
             <p> <strong> 13:30 </strong>: <strong>Commencement</strong> </p>
             <p> <strong> 13:40 </strong>:  <strong>First Keynote </strong>by <a href="#ProfAle">Prof. Alejandro Frangi</a></p>
             <p> <strong> 14:25 </strong>:  <strong>Spotlight Presentations I</strong> <emphasis> <a href="#Accepted Papers"> Paper 1 to 11 </a></emphasis> </p>
@@ -58,110 +60,126 @@
             <p> <strong> 16:45 </strong>:  <strong>Spotlight Presentations II</strong> <emphasis><a href="#Accepted Paper">Paper 12 through 18</a></emphasis>  </p>
             <p> <strong> 17:06 </strong>:  <strong>Third Keynote</strong> by <a href="#ProfBern">Prof. Bernhard Kainz</a></p>
             <p> <strong> 17:51 </strong>: <strong>Closing</strong> </p>
-            <p> <strong> 18:00 </strong>:  <strong>Workshop ends</strong> </p> 
+            <p> <strong> 18:00 </strong>:  <strong>Workshop ends</strong> </p>  -->
 
             
         <h1 id="workshop-description">Workshop Description</h1>
-            <p align="justify">Data engineering plays a vital role in advancing medical imaging research, where limited data availability poses a significant challenge. 
-                To tackle this issue, the medical imaging community has adopted various techniques, including active learning, label and data augmentation, self-supervision, and synthetic data generation.</p>
-<p align="justify">However, the potential of these methods has yet to be fully leveraged. Data augmentation, for instance, is often randomly chosen based on intuition. 
-    Yet previous work has shown that it is crucial to jointly optimize the augmentations' complexity and affinity, i.e., how much the augmentation shifts the decision boundary of the clean baseline model. 
-    Other studies suggest that not every synthetic example improves the model's generalizability, with some even hurting performance if not reasonably chosen. 
-    Similarly, the effect of self-supervised pre-training methods on downstream tasks generally depends on the overlap between the pretext task and the downstream tasks. 
-    For instance, a model trained to predict rotation angles will not be effective in rotationally invariant organs.   </p>  
-<p align="justify">We witness various research efforts in the data engineering domain, but most are pursued in isolation. And many research questions in data engineering that are of utmost importance to the success of machine learning methods for medical image analysis remain unanswered. 
-Some questions this workshop hopes to help answer are:
-                <ul>
+        <p align="justify">The overall goal of this workshop is to bring researchers, academicians, professionals and policymakers under a single umbrella to innovate data engineering methods that make the best of the limited data in the medical domain.
+          In our past two editions, we focused on addressing several key issues in data engineering, including:
+          <ul>
+<li>Generating task-specific biomedical synthetic data and augmenting it with real data.
+<li>Developing principled methods to identify diverse and discriminative subsets of training examples to label for downstream tasks, minimizing annotation budget and time without compromising performance.</li>
+<li>Designing image-specific augmentation policies instead of relying on random policies. For instance, vertically flipping lungs in medical images could mislabel the right lung as the left, a common issue in X-rays.</li>
+<li>Designing suitable pretext tasks for specific downstream medical tasks, learning from noisy data, and learning from distributed data without sharing raw content.</li>
+</ul>
+</p>
 
-                
-                <li>What data should we collect to train a model for a given medical task?</li>
-                <li>How do we identify diverse and discriminative examples for a downstream task in complex biomedical datasets? For instance, do we need to annotate every frame in a surgical video? </li>
-                <li>How do we identify the best augmentation strategy?</li>
-                <li>What is the best way to spend a data labeling budget (time/money)? How much data should we collect, and how much of it should we label? </li>
-                <li>How do we learn to synthesize data for a downstream medical task? </li>
-                <li>How do we design suitable pretext tasks for a particular downstream task? </li>
-                <li>And overall, how can we blend exisitng data-focused works to extract the most benefit from the data?</li>
-                </ul>  
+<p align="justify">Our contributions are compiled and published in the proceedings.
+  Some of the contributions from the earlier editions, such as Khanal et al. (2023), proposed training models using self-supervised learning, followed by employing methods to learn from noisy labels.
+  Similarly, Poudel et al. (2024) and Thrasher et al. (2024) proposed a task-aware active learning method to sample the most informative unlabeled data, reducing the need for training examples by 50%.
+  Contributions from Dener et al. (2023), Reyes-Amezcua et al. (2024), and Rau et al. (2023) focused on curating both task-aware and task-unaware synthetic data and addressing biases in synthetic data. Babu et al. (2024) and Pokhrel et al. (2024) highlighted biases in data augmentation and their use in out-of-distribution detection, respectively.
+</p>
 
-              
-            </p>  
-            <p align="justify"> The workshop invites researchers to submit their work in the field of medical imaging around the central theme of data engineering. Some themes we would like to explore include for instance:
-            </p>  
+<p align="justify">These contributions have developed innovative and principled methods to integrate different aspects of data engineering, maximizing the benefits of available data—central to this workshop's theme. 
+  As Ilya Sutskever remarked in his speech at NeurIPS 2024, "Computers are advancing with better hardware, algorithms, and clusters." However, data—the "fossil fuel" of AI—has reached its growth limit. 
+  His statement underscores the growing importance of AI tools and techniques for effectively utilizing limited data.
+</p>
+
+<p align="justify">Data-driven deep learning architectures such as UNet, VGGNet, ResNet, V-Net, DenseNet, and Vision Transformers are widely used in downstream tasks such as detection, classification, and 3D reconstruction.
+  These architectures require large volumes of annotated data to train their millions of parameters, which is difficult and expensive to collect and annotate.
+  In medical image analysis, standard sensors are often unsuitable for in vivo use.
+  When they are suitable, data collection requires patient consent, lengthy acquisition procedures, and the large inter-rater variability in medical image analysis which makes it even harder to have high-quality labels.
+</p>
+
+<p align="justify">To address these challenges, data engineering methods such as geometric transformations (e.g., rotation, flipping, cropping), MixUp, and Cutout —though limited to single modality—have been introduced to expand training datasets over the past decade. 
+  However, the frequency of such contributions remains low compared to architectural engineering. Although infrequent, these methods have proven effective in improving model generalization.
+  </p>
+
+<p align="justify">In recent years, there has been a growing trend in leveraging multimodal data.
+  Large Language Models, Vision-Language Models, and multimodal generative models have been used to synthesize multimodal content, expanding training datasets.
+  Despite the ability to generate large volumes of synthetic data, the fidelity and quality of this data are often insufficient, leading to either modest improvements or even deterioration in model generalization. 
+Existing data engineering methods are predominantly designed for unimodal datasets, emphasizing the need to extend them to handle multimodal data effectively.
+</p>
+
+<p align="justify">Given the increasing influence of generative AI, large language models, and multimodal data acquisition, the workshop remains highly relevant.
+  In the proposed edition, we aim to build upon last year’s topics by further exploring large language models and multimodal data synthesis through the lens of data augmentation and the benchmarks to quantify and assess the contributions in data engineering.
+</p> 
 
 
             <h1 id="Workshop themes">Workshop themes</h1>
             <ol> 
-              <li><p align="justify"> <strong>Data Augmentation and Label Augmentation in the Medical Domain:</strong> includes data augmentation through geometric transformations or application-aware policies. It also investigates data generated from virtual environments, phantoms, or generative models.
+              <li><p align="justify"> <strong>Data Augmentation in the Medical Domain:</strong> This sub theme covers data augmentation through geometric transformations, simulated data from phantoms and generative models in the medical domain, large language models, and multimodal data. It also investigates methods for designing application-aware data augmentation policies.
+
               </p></li>
-              <li><p align="justify"> <strong>Active Learning and Active Synthesis:</strong> covers methods that find the most discriminative and diverse subset of unlabelled data to train a model for various clinical applications. Active synthesis is about generating synthetic data for a particular application.
+              <li><p align="justify"> <strong>Active Learning and Active Synthesis:</strong> This sub theme focuses on methods for identifying the most discriminative and diverse subsets of unlabeled unimodal and multimodal data to train models for various clinical applications. Active synthesis involves generating synthetic data relevant to the target application.
               </p></li>
                 
-               <li><p align="justify"> <strong>Federated learning:</strong> distributed data management and learning to address privacy concerns and security, for instance, across institutions or countries. 
+               <li><p align="justify"> <strong>Self-Supervised Learning:</strong> This sub theme explores methods for designing application-specific pretext tasks for pre-training models in a self-supervised manner. Generic pretext tasks are often suboptimal for downstream tasks, highlighting the need for tailored approaches for both unimodal and multimodal datasets.
+
                 </p></li>
-                <li><p align="justify"> <strong>Multimodal learning:</strong> includes approaches to combine data from multiple sources and sensors (e.g. CT, MRI, endoscope, text, audio, depth, etc.)
+                <li><p align="justify"> <strong>Datasets and Benchmarking for Data Engineering:</strong> This subtheme explores datasets and benchmarks specifically designed for developing, assessing, and validating data engineering methods in both unimodal and multimodal setups, including validation of newly generated samples( e.g newly generated samples). As we know, the standard metrics are known to be suboptimal, expert rating is highly subjective and depends on the medical application.
+
                 </p></li>
-                <li><p align="justify"> <strong>Self-Supervised Learning Algorithms for Medical Downstream Tasks:</strong> investigates application-specific relevant pretext tasks for pre-training models in a self-supervised manner. 
-                </p></li>
-                <li><p align="justify"> <strong>Large Language and Vision Language Models:</strong> for synthetic data generation and data augmentation. 
-                </p></li>
-                <li><p align="justify"> <strong>
-                 Large-scale data management and data quality assessment.</strong>
-                </p></li>
+          
             </ol>
             
+            <h1 id="Imaging themes">Imaging Themes (not limited to):</h1>
+            <ol>
+                <li><p align="justify">Optical imaging: Endoscopy, OCT, histopathology, Hyperspectral imaging, opto-acoustics, fundus imaging</li>
+                <li><p align="justify">CT, PET, MRI</p></li>
+                <li><p align="justify">X-ray</p></li>
+                <li><p align="justify">Ultrasound</p></li>
+                <li><p align="justify">New imaging biomarkers</p></li>
+                <li><p align="justify">Multimodal imaging</p></li>
+                <li><p align="justify">Synthetic data of various imaging types</p></li>
+                <li><p align="justify">Other imaging</p></li>
+            </ol>
+            
+            <h1 id="Clinical applications">Clinical Applications (not limited to):</h1>
+            <ul>
+                <li><p align="justify">Surgical data science</p></li>
+                <li><p align="justify">Classification, detection, and diagnosis in medical image analysis</p></li>
+                <li><p align="justify">Organ/instrument/lesion segmentation</p></li>
+                <li><p align="justify">Image registration and data fusion</p></li>
+                <li><p align="justify">Image reconstruction</p></li>
+                <li><p align="justify">Prognosis and prediction</p></li>
+                <li><p align="justify">Tissue characterisation</p></li>
+                <li><p align="justify">Biology image analysis</p></li>
+            </ul>
+            
+            <h1 id="organs">Organs (not limited to):</h1>
+            <ul>
+                <li><p align="justify">Brain</p></li>
+                <li><p align="justify">Head and neck</p></li>
+                <li><p align="justify">Liver</p></li>
+                <li><p align="justify">Gastrointestinal tract diseases</p></li>
+                <li><p align="justify">Lungs</p></li>
+            </ul>
+
           <h1 id="Keynote speakers">Keynote speakers</h1> 
-        <!-- <p align="justify"> <strong></strong> </p> -->
-        <p  id="ProfAle" align="justify"> <strong>Prof. Alejandro Frangi</strong>
-          <!-- <img src="/assets/images/keynote speakers/Frangi.png" alt="Prof. Alejandro Frangi" width="300"  id="hp2"/> -->
-        </p></li>
-        
-        <p>Alejandro Frangi is a prominent researcher in the field of medical image analysis and modeling, with a focus on machine learning and computational physiology. His research interests lie at the intersection of medical image analysis, machine learning, and computational physiology, 
-          with a particular emphasis on statistical methods applied to population imaging and in silico clinical trials. His work has been highly interdisciplinary, spanning the areas of cardiovascular, musculoskeletal, and neurosciences.
-          Professor Frangi's research has been instrumental in advancing the field of medical image analysis and computational modeling, leading to the development of three spin-off companies: Clintelis SA in 2009, GalgoMedical SA in 2013, and adsilico Ltd in 2022. 
-          His contributions have been recognized through numerous awards and honors, including being named an IEEE Fellow (2014), EAMBES Fellow (2013), SPIE Fellow (2020), AAIA-AI Fellow (2021), MICCAI Fellow (2021), ATI Turing Fellow (2021), and FREng (2023). 
-          He has also served in various leadership roles, including serving on the Board of Directors of the Medical Image Computing and Computer-Assisted Interventions Society (MICCAI) from 2014 to 2019 and as Chair of the Editorial Board of the MICCAI-Elsevier Book Series from 2017 to 2023.          
-        </p>
-        <p id="ProfBern" align="justify"> <strong>Prof. Bernhard Kainz</strong>
-        <!-- <img src="/assets/images/keynote speakers/kainz.png" alt="Prof. Bernhard Kainz" width="300"  id="hp2"/> -->
-      </p></li>
-        <p>Bernhard Kainz is a distinguished academic figure with a robust background in the field of Medical Image Computing. Holding the position of Associate Professor in the Department of Computing at Imperial College London, 
-          he leads the human-in-the-loop computing group and co-leads the biomedical image analysis research group (BioMedIA). Additionally, he serves as a Professor at Friedrich-Alexander-University 
-          Erlangen-Nuremberg, where he heads the Image Data Exploration and Analysis Lab (IDEA Lab). His research primarily focuses on intelligent algorithms in healthcare, particularly in Medical Imaging,
-          with a special emphasis on self-driving medical image acquisition that can assist human operators in real-time diagnostics.
-        </p>
-
-
-        <p id="ProfLena" align="justify"> <strong>Prof. Lena Maier-Hein</strong>
-          <!-- <img src="/assets/images/keynote speakers/kainz.png" alt="Prof. Bernhard Kainz" width="300"  id="hp2"/> -->
-        </p></li>
-          <p>Lena Maier-Hein is a full professor at Heidelberg University (Germany) and managing director of the National Center for Tumor Diseases (NCT) Heidelberg. At the German Cancer Research Center (DKFZ) she is head of the division Intelligent Medical Systems (IMSY) and managing director of the "Data Science and Digital Oncology" cross-topic program. Her research concentrates on machine learning-based biomedical image analysis with a specific focus on surgical data science, computational biophotonics and validation of machine learning algorithms. She is a fellow of the Medical Image Computing and Computer Assisted Intervention (MICCAI) society and of the European Laboratory for Learning and Intelligent Systems (ELLIS), president of the MICCAI special interest group on challenges and chair of the international surgical data science initiative.
-            Lena Maier-Hein serves on the editorial board of the journals Nature Scientific Data, IEEE Transactions on Pattern Analysis and Machine Intelligence and Medical Image Analysis. During her academic career, she has been distinguished with several science awards including the 2013 Heinz Maier Leibnitz Award of the German Research Foundation (DFG) and the 2017/18 Berlin-Brandenburg Academy Prize. She has received a European Research Council (ERC) starting grant (2015-2020) and consolidator grant (2021-2026).            
-          </p>
-    
-
+        <p><b>Coming Soon</b></p>
     
     <h1 id="Important Dates">Important Dates</h1>
-    <!-- <p>Coming Soon</p> -->
-   <p><strong>Paper submission begins:</strong> 2nd May 2024</p>
-<!-- <p><strong>Submission deadline:</strong> <del>24th June 2024</del> <span style="color: red;">14th July 2023</span></p> -->
-  <p><strong>Submission deadline:</strong> <del>24th June 2024</del><span style="color: red;"> 29th June 2024</span></p>
-<p><strong>Paper decision notification:</strong> 15th July 2024</p> <!--<span style="color: red;">28th July 2023</span></p>-->
-    <p><strong>Camera ready submission:</strong> 21st July 2024 </p>  <!-- <span style="color: red;">4th August 2023</span></p> -->
-      <p><strong>Workshop day:</strong> 10th October 2024</p>
+    <p><b>Coming Soon</b></p>
+   <!-- <p><strong>Paper submission begins:</strong> 2nd May 2024</p> -->
+  <!-- <p><strong>Submission deadline:</strong> <del>24th June 2024</del><span style="color: red;"> 29th June 2024</span></p> -->
+<!-- <p><strong>Paper decision notification:</strong> 15th July 2024</p>  -->
+    <!-- <p><strong>Camera ready submission:</strong> 21st July 2024 </p>   -->
+      <!-- <p><strong>Workshop day:</strong> 10th October 2024</p> -->
           
     <h1 id="Submission">Submission</h1>
-    <!-- <p>Coming Soon</p> -->
-    <p><strong>CMT submission website</strong>:<a href="https://cmt3.research.microsoft.com/DEMI2024"> CMT for DEMI@MICCAI2024</a> </p>
+    <p><b>Coming Soon</b></p>
+    <!-- <p><strong>CMT submission website</strong>:<a href="https://cmt3.research.microsoft.com/DEMI2024"> CMT for DEMI@MICCAI2024</a> </p>
     <p>Accepted papers will be published in a joint proceeding with the MICCAI 2024 conference. </p>
     <p>All papers should be formatted according to the <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"> Lecture Notes in Computer Science templates</a>.</p>
     <p><span lang="EN-US">We recommend<strong> submission up to 8-pages and 2-pages of references (same as MICCAI main conference) for a double-blind peer review process</strong></span></p>
-    <p>In addition, since the joint workshop has adhered to the <strong>double-blinded peer review process</strong>, we ask that you <strong>please follow the <a href="https://conferences.miccai.org/2024/en/PAPER-SUBMISSION-AND-REBUTTAL-GUIDELINES.html">MICCAI2024 anonymity guidelines</strong></a> when preparing your intial submission.</p> 
+    <p>In addition, since the joint workshop has adhered to the <strong>double-blinded peer review process</strong>, we ask that you <strong>please follow the <a href="https://conferences.miccai.org/2024/en/PAPER-SUBMISSION-AND-REBUTTAL-GUIDELINES.html">MICCAI2024 anonymity guidelines</strong></a> when preparing your intial submission.</p>  -->
 
 
     <h1 id="Proceedings">Proceedings</h1>
     <p align="justify"><span style="font-size: 12pt ;" style="padding: 20px;"><br />
-    <img src="/assets/images/webpage/LNCS-Logo.png" alt="LNCS" style="float:left" width="128" /> <p>Accepted papers will be published in LNCS as a separate DEMI 2024 (MICCAI Workshop) proceeding </p>
-
+    <img src="/assets/images/webpage/LNCS-Logo.png" alt="LNCS" style="float:left" width="128" /> <p>Accepted papers will be published in LNCS as a separate DEMI 2025 (MICCAI Workshop) proceeding </p>
+<!-- 
   <h2 id="Accepted Papers">Accepted Papers</h2>
 <ol>
         <li>
@@ -259,48 +277,53 @@ Some questions this workshop hopes to help answer are:
     
 
     
-    </ol>
+    </ol> -->
 
       <h1 id="Organising committee">Organising committee</h1>
         <table>
           <tbody>
             <tr>
               <td><img src="/assets/images/organisers/4856_0317138.jpg" alt="Binod Bhattarai" width="300"  id="hp2"/></td>
-              <td><img src="/assets/images/organisers/shariba.jpeg" alt="Sharib Ali" width="300"  id="hp2"/></td>
               <td><img src="/assets/images/organisers/anita.jpg" alt="Anita Rau" width="300" id="hp2"/></td>
+              <td><img src="/assets/images/organisers/razvan.jpg" alt="Razvan Caramalau" width="300"  id="hp2" /></td>
+
             </tr>
             <tr>
               <td><a href="https://sites.google.com/view/bbinod">Binod Bhattarai</a><br />University of Aberdeen, UK</td>
-              <td><a href="https://eps.leeds.ac.uk/computing/staff/11465/dr-sharib-ali">Sharib Ali</a><br /> University of Leeds, UK </td>
-              <td><a href="https://profiles.stanford.edu/anita-rau">Anita Rau</a><br />Stanford University, USA
+              <td><a href="https://scholar.google.com/citations?user=9D2d4o4AAAAJ">Anita Rau</a><br />Stanford University, USA </td>
               </td>
+              <td><a href="https://scholar.google.com/citations?user=gndj6ksAAAAJ">Razvan Caramalau</a><br /> Digital Technologies, Medtronic, UK
+
             </tr>
             <tr>
-              <td><img src="/assets/images/organisers/razvan.jpg" alt="Razvan Caramalau" width="300"  id="hp2" /></td>
+              <td><img src="/assets/images/organisers/AnnikaReinke.jpg" alt="annika"  width="300"  id="hp2"/></td>
               <td><img src="/assets/images/organisers/AnhNguyen.png" alt="anguyen"  width="300"  id="hp2"/></td>
-              <td><img src="/assets/images/organisers/Prashnna.jpeg" alt="Prashnna" width="300" id="hp2"/></td>
+              <td><img src="/assets/images/organisers/ana.jpg" alt="ana-namburete" width="300" id="hp2"/></td>
+
             </tr>
             <tr>
-              <td><a href="https://iris.ucl.ac.uk/iris/browse/profile?upi=RCARA82">Razvan Caramalau</a><br /> University College London, UK
+              <td><a href="https://scholar.google.com.pk/citations?hl=en&user=yPAnQD4AAAAJ">Annika Reinke</a><br /> German Cancer Research Institute, Germany
               <td><a href="https://www.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a><br /> University of Liverpool, UK</td>
-                <td><a href="https://directory.statler.wvu.edu/faculty-staff-directory/prashnna-gyawali">Prashnna Gyawali</a><br /> West Virginia University, USA
-                </td>
-                
-            </tr>
-            <td><img src="/assets/images/organisers/ana.jpg" alt="ana-namburete" width="300" id="hp2"/></td>
-            <td><img src="/assets/images/organisers/Dan.jpg" alt="Danail Stoyanov" width="300" id="hp2"></td>
-            <tr>
               <td><a href="https://www.pmb.ox.ac.uk/person/professor-ana-namburete">Ana Namburete</a><br /> University of Oxford, UK
               </td>
-              <td><a href="https://www.ucl.ac.uk/surgical-robot-vision/people/danail-stoyanov">Danail Stoyanov</a><br />University College London, UK
+                
+            </tr>
+            <td><img src="/assets/images/organisers/Prashnna.jpeg" alt="Prashnna" width="300" id="hp2"/></td>
+
+            <td><img src="/assets/images/organisers/Dan.jpg" alt="Danail Stoyanov" width="300" id="hp2"></td>
+            <tr>
+              <td><a href="https://directory.statler.wvu.edu/faculty-staff-directory/prashnna-gyawali">Prashnna Gyawali</a><br /> West Virginia University, USA
+
+              </td>
+              <td><a href="https://profiles.ucl.ac.uk/32290-danail-stoyanov">Danail Stoyanov</a><br />University College London, UK
               </td>
             </tr>
           </tbody>
         </table>
 
 <h1>Technical Program Committee</h2>
-<!--   <p><strong>TBD</strong></p>  -->
-<table>
+  <p><strong>TBD</strong></p> 
+<!-- <table>
   <tr>
     <td>Annika Reinke (German Cancer Research Center, Heidelberg, Germany)</td>
   </tr>
@@ -364,9 +387,10 @@ Some questions this workshop hopes to help answer are:
   <tr>
     <td>Ziyang Wang (University of Oxford, London, UK)</td>
   </tr>
-</table>
+</table> -->
 
 <h1>Web and Publicity Chair</h2>
+  <li><a href="https://anjuchhetri.com.np/">Anju Chhetri, NAAMII, Nepal</a></li> 
   <li><a href="https://www.naamii.org.np/teams/sandesh-pokhrel/">Sandesh Pokhrel, NAAMII, Nepal</a></li> 
   <div>      
       <h1 id="Sponsors">Sponsors</h1>
