@@ -38,6 +38,10 @@ export default function App() {
             </span>
           </p>
         </div>
+
+        <div className={[styles["header__miccai"]]}>
+          <img src="/miccai2025.png" alt="A workshop at MICCAI 2025" />
+        </div>
       </header>
 
       <div className={styles["navbar__wrapper"]}>
