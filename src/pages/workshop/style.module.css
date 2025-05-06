@@ -1,0 +1,22 @@
+.multicolumn-list {
+}
+.multicolumn-list ul {
+}
+
+.multicolumn-list ul:first-child {
+  margin-bottom: 0;
+}
+.multicolumn-list ul:last-child {
+  margin-top: 0;
+}
+
+.multicolumn-list ul li {
+  margin-bottom: 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .multicolumn-list {
+    display: flex;
+    gap: 3rem;
+  }
+}

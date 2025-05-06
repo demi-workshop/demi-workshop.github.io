@@ -1,0 +1,32 @@
+.organizer {
+  box-sizing: content-box;
+  width: 200px;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.8rem;
+}
+
+.organizer p {
+  margin: 0;
+}
+
+.organizer__image {
+  width: 200px;
+}
+
+.organizer .organizer__name {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  margin-top: 1rem;
+}
+
+.organizer .organizer__title {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: center;
+  margin-top: 0.25rem;
+}

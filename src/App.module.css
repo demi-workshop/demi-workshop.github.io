@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.header__logo img {
+  width: 420px;
+  max-width: calc(420px - 100px);
+}
+
+.header__info {
+  text-align: center;
+}
+
+.header__info p {
+  font-weight: 550;
+}
+
+.header__info sup {
+  vertical-align: super;
+  font-size: 0.75rem;
+}
+
+.navbar__wrapper {
+  margin: 2rem 0;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer__miccai img {
+  width: calc(0.5 * 100vw);
+  max-width: 220px;
+}
+
+.footer__copyright {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .header__logo {
+    display: block;
+  }
+  .header__info {
+    text-align: right;
+  }
+}
