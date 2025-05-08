@@ -10,7 +10,7 @@ export default function SpeakersPage() {
           textAlign: "center",
         }}
       >
-        Coming Soon...
+        Speakers will be announced shortly.
       </p>
     </section>
   );
