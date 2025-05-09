@@ -7,7 +7,7 @@ export default function SubmissionPage() {
         <strong className="u-color-secondary" style={{ fontWeight: 600 }}>
           CMT submission website:
         </strong>
-        &nbsp;CMT submission link will be coming shortly.
+        &nbsp;<a href="https://cmt3.research.microsoft.com/DEMI2025/">CMT DEMI</a>
       </p>
       <p style={{ marginBottom: 0 }}>
         We welcome your valuable contributions. Please follow the steps below to
