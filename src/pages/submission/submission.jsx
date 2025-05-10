@@ -7,7 +7,8 @@ export default function SubmissionPage() {
         <strong className="u-color-secondary" style={{ fontWeight: 600 }}>
           CMT submission website:
         </strong>
-        &nbsp;<a href="https://cmt3.research.microsoft.com/DEMI2025/">CMT DEMI</a>
+        &nbsp;
+        <a href="https://cmt3.research.microsoft.com/DEMI2025/">CMT DEMI</a>
       </p>
       <p style={{ marginBottom: 0 }}>
         We welcome your valuable contributions. Please follow the steps below to
@@ -34,7 +35,10 @@ export default function SubmissionPage() {
       </ul>
       <p>
         Accepted papers will be published in a joint proceeding with the MICCAI
-        2024 conference. All papers should be formatted according to the &nbsp;
+        2024 conference.
+      </p>
+      <p>
+        All papers should be formatted according to the &nbsp;
         <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">
           Lecture Notes in Computer Science templates
         </a>

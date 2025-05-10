@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import styles from "./navbar.module.css";
 
@@ -27,25 +28,25 @@ export default function Navbar() {
           </button>
         </li>
         <li>
-          <a href="#about-demi">About DEMI</a>
+          <a href="/#about-demi">About DEMI</a>
         </li>
         <li>
-          <a href="#workshop-details">Workshop Details</a>
+          <Link to="/workshop-details">Workshop Details</Link>
         </li>
         <li>
-          <a href="#speakers">Speakers</a>
+          <Link to="/speakers">Speakers</Link>
         </li>
         <li>
-          <a href="#important-dates">Important Dates</a>
+          <Link to="/important-dates">Important Dates</Link>
         </li>
         <li>
-          <a href="#submission">Submission</a>
+          <Link to="/submission">Submission</Link>
         </li>
         <li>
-          <a href="#organizing-committee">Organizing Committee</a>
+          <a href="/#organizing-committee">Organizing Committee</a>
         </li>
         <li>
-          <a href="#sponsors">Sponsors</a>
+          <a href="/#sponsors">Sponsors</a>
         </li>
         <li></li>
       </ul>

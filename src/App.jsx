@@ -1,21 +1,23 @@
-import styles from "./App.module.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 import AboutPage from "./pages/about/about";
 import ImportantDatesPage from "./pages/important-dates/important-dates";
-import OrganizersPage from "./pages/organizers/organizers";
 import SpeakersPage from "./pages/speakers/speakers";
-import SponsorsPage from "./pages/sponsors/sponsors";
 import SubmissionPage from "./pages/submission/submission";
 import WorkshopPage from "./pages/workshop/workshop";
+
 import Navbar from "./ui/navbar/navbar";
+
+import styles from "./App.module.css";
 
 export default function App() {
   return (
-    <>
+    <BrowserRouter>
       <header className={styles["header"]}>
         <div className={styles["header__logo"]}>
-          <a href="/">
+          <Link to="/">
             <img src="/logo.png" alt="Logo of DEMI workshop" />
-          </a>
+          </Link>
         </div>
 
         <div className={styles["header__info"]}>
@@ -48,19 +50,13 @@ export default function App() {
         <Navbar />
       </div>
 
-      <AboutPage />
-
-      <WorkshopPage />
-
-      <SpeakersPage />
-
-      <ImportantDatesPage />
-
-      <SubmissionPage />
-
-      <OrganizersPage />
-
-      <SponsorsPage />
+      <Routes>
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/workshop-details" element={<WorkshopPage />} />
+        <Route path="/speakers" element={<SpeakersPage />} />
+        <Route path="/important-dates" element={<ImportantDatesPage />} />
+        <Route path="/submission" element={<SubmissionPage />} />
+      </Routes>
 
       <footer className={styles["footer"]}>
         <div className={styles["footer__miccai"]}>
@@ -72,6 +68,6 @@ export default function App() {
           <p>&copy; 2025 DEMI @ MICCAI 2025</p>
         </div>
       </footer>
-    </>
+    </BrowserRouter>
   );
 }
