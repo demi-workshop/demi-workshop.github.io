@@ -28,7 +28,7 @@ export default function Navbar() {
           </button>
         </li>
         <li>
-          <a href="/#about-demi">About DEMI</a>
+          <a href="/#/#about-demi">About DEMI</a>
         </li>
         <li>
           <Link to="/workshop-details">Workshop Details</Link>
@@ -43,10 +43,10 @@ export default function Navbar() {
           <Link to="/submission">Submission</Link>
         </li>
         <li>
-          <a href="/#organizing-committee">Organizing Committee</a>
+          <a href="/#/#organizing-committee">Organizing Committee</a>
         </li>
         <li>
-          <a href="/#sponsors">Sponsors</a>
+          <a href="/#/#sponsors">Sponsors</a>
         </li>
         <li></li>
       </ul>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, HashRouter } from "react-router-dom";
 
 import AboutPage from "./pages/about/about";
 import ImportantDatesPage from "./pages/important-dates/important-dates";
@@ -12,7 +12,7 @@ import styles from "./App.module.css";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <header className={styles["header"]}>
         <div className={styles["header__logo"]}>
           <Link to="/">
@@ -52,10 +52,10 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<AboutPage />} />
-        <Route path="/workshop-details" element={<WorkshopPage />} />
-        <Route path="/speakers" element={<SpeakersPage />} />
-        <Route path="/important-dates" element={<ImportantDatesPage />} />
-        <Route path="/submission" element={<SubmissionPage />} />
+        <Route path="workshop-details" element={<WorkshopPage />} />
+        <Route path="speakers" element={<SpeakersPage />} />
+        <Route path="important-dates" element={<ImportantDatesPage />} />
+        <Route path="submission" element={<SubmissionPage />} />
       </Routes>
 
       <footer className={styles["footer"]}>
@@ -68,6 +68,6 @@ export default function App() {
           <p>&copy; 2025 DEMI @ MICCAI 2025</p>
         </div>
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
