@@ -142,13 +142,16 @@
     animation: none;
     border: none;
     padding: 0.5rem 3rem;
-    border-bottom: 2px solid white;
   }
 
   .navbar ul li:last-child {
     display: block;
     background-color: white;
     flex-grow: 1;
+  }
+
+  .navbar ul li:nth-last-child(2) {
+    margin-right: 2rem;
   }
 
   .navbar ul li:hover {
