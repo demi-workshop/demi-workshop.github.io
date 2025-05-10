@@ -21,19 +21,24 @@ export default function ImportantDatesPage() {
         }}
       ></p>
       <table className={styles.table}>
-        <thead>
-          <tr>
-            <th>Event</th>
-            <th>Date</th>
+        <thead className={styles.thead}>
+          <tr className={styles.headerRow}>
+            <th className={styles.cell}>Event</th>
+            <th className={styles.cell}>Date</th>
           </tr>
         </thead>
-        <tbody>
-          {dates.map((item, index) => (
-            <tr key={index}>
-              <td>{item.title}</td>
-              <td>{item.date}</td>
-            </tr>
-          ))}
+
+        <tbody className={styles.tbody}>
+          {dates.map((row, idx) => {
+            return (
+              <>
+                <tr key={idx} className={styles.dataRow}>
+                  <td className={styles.cell}>{row["title"]}</td>
+                  <td className={styles.cell}>{row["date"]}</td>
+                </tr>
+              </>
+            );
+          })}
         </tbody>
       </table>
     </section>
