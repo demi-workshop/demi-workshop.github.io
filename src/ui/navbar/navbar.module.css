@@ -107,7 +107,8 @@
   from {
     opacity: 0;
     transform: translateY(-10px);
-  } to {
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -117,12 +118,18 @@
   display: none;
 }
 
+.navbar li.link--active,
+.navbar ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar ul li:first-child {
     display: none;
   }
 
-  .navbar.navbar--inactive ul li:not(:first-child), 
+  .navbar.navbar--inactive ul li:not(:first-child),
   .navbar.navbar--active ul li:not(:first-child) {
     display: block !important;
   }
@@ -152,10 +159,5 @@
 
   .navbar ul li:nth-last-child(2) {
     margin-right: 2rem;
-  }
-
-  .navbar ul li:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
   }
 }
