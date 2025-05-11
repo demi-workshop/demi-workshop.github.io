@@ -1,7 +1,60 @@
+import { useEffect, useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
+
+import styles from "./style.module.css";
+
+const getPastIterationsImages = () => {
+  const demi2023 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+  const demi2024 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+  const demi2023_urls = demi2023.map(
+    (index) => `./photos/demi-2023/${index}.png`
+  );
+  const demi2024_urls = demi2024.map(
+    (index) => `./photos/demi-2024/${index}.png`
+  );
+
+  return [...demi2023_urls, ...demi2024_urls];
+};
+
 export default function PastIterationsPage() {
+  const images_urls = getPastIterationsImages();
+  const [visibleIndex, setVisibleIndex] = useState(0);
+  const [items_per_page, set_items_per_page] = useState(6);
+
+  const handle_show_right = () => {
+    setVisibleIndex((prev) =>
+      Math.min(prev + items_per_page, images_urls.length)
+    );
+  };
+  const handle_show_left = () => {
+    setVisibleIndex((prev) => Math.max(0, prev - items_per_page));
+  };
+
+  useEffect(() => {
+    const handle_items_per_page_on_resize = () => {
+      set_items_per_page(() => {
+        const width = document.body.clientWidth;
+
+        if (width >= 980) {
+          return 6;
+        } else {
+          return 2;
+        }
+      });
+    };
+
+    handle_items_per_page_on_resize();
+
+    window.addEventListener("resize", handle_items_per_page_on_resize);
+
+    return () =>
+      window.removeEventListener("resize", handle_items_per_page_on_resize);
+  }, []);
+
   return (
     <section id="past-iterations">
-      <h3>Our Past Iterations</h3>
+      <h2>Our Past Iterations</h2>
 
       <p>
         Our contributions are compiled and published in the proceedings. Some of
@@ -59,6 +112,40 @@ export default function PastIterationsPage() {
         are predominantly designed for unimodal datasets, emphasizing the need
         to extend them to handle multimodal data effectively.
       </p>
+
+      <h3>Glimpses of Past Events</h3>
+      <div className={styles["gallery__wrapper"]}>
+        <div
+          className={`${styles["gallery__btn"]} ${
+            visibleIndex == 0 ? styles["gallery__btn--inactive"] : ""
+          }`}
+          onClick={handle_show_left}
+        >
+          <FaChevronLeft />
+        </div>
+        <div className={styles["gallery"]}>
+          {images_urls
+            .slice(
+              visibleIndex,
+              Math.min(visibleIndex + items_per_page, images_urls.length)
+            )
+            .map((url) => (
+              <div key={url} className={styles["gallery__item"]}>
+                <img src={url} alt="DEMI workshop images" height="200px"/>
+              </div>
+            ))}
+        </div>
+        <div
+          className={`${styles["gallery__btn"]} ${
+            visibleIndex + items_per_page >= images_urls.length
+              ? styles["gallery__btn--inactive"]
+              : ""
+          }`}
+          onClick={handle_show_right}
+        >
+          <FaChevronRight />
+        </div>
+      </div>
 
       <h3>See also</h3>
       <ul>
