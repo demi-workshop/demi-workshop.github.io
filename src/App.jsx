@@ -15,6 +15,7 @@ import WorkshopPage from "./pages/workshop/workshop";
 import Navbar from "./ui/navbar/navbar";
 
 import styles from "./App.module.css";
+import PastIterationsPage from "./pages/past-iterations/past-iterations";
 
 export default function App() {
   return (
@@ -58,6 +59,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<AboutPage />} />
+        <Route path="past-iterations" element={<PastIterationsPage />} />
         <Route path="workshop-details" element={<WorkshopPage />} />
         <Route path="speakers" element={<SpeakersPage />} />
         <Route path="important-dates" element={<ImportantDatesPage />} />

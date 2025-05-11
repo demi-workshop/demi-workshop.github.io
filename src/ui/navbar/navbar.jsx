@@ -28,7 +28,7 @@ export default function Navbar() {
           </button>
         </li>
         <li>
-          <a href="/#/#about-demi">About DEMI</a>
+          <Link to="/past-iterations">Our Past Iterations</Link>
         </li>
         <li>
           <Link to="/workshop-details">Workshop Details</Link>
