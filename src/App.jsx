@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, Link, HashRouter } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  HashRouter,
+} from "react-router-dom";
 
 import AboutPage from "./pages/about/about";
 import ImportantDatesPage from "./pages/important-dates/important-dates";
@@ -36,7 +42,7 @@ export default function App() {
               &middot;
             </span>
             <span>
-              23<sup>rd</sup> to 27<sup>th</sup> September, 2025
+              27<sup>th</sup> September, 2025
             </span>
           </p>
         </div>
