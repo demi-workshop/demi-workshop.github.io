@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./style.module.css";
 
 const dates = [
@@ -31,12 +32,10 @@ export default function ImportantDatesPage() {
         <tbody className={styles.tbody}>
           {dates.map((row, idx) => {
             return (
-              <>
-                <tr key={idx} className={styles.dataRow}>
-                  <td className={styles.cell}>{row["title"]}</td>
-                  <td className={styles.cell}>{row["date"]}</td>
-                </tr>
-              </>
+              <tr key={idx} className={styles.dataRow}>
+                <td className={styles.cell}>{row["title"]}</td>
+                <td className={styles.cell}>{row["date"]}</td>
+              </tr>
             );
           })}
         </tbody>
