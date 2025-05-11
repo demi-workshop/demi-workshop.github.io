@@ -1,5 +1,4 @@
 import {
-  BrowserRouter,
   Routes,
   Route,
   Link,
@@ -9,13 +8,13 @@ import {
 import AboutPage from "./pages/about/about";
 import ImportantDatesPage from "./pages/important-dates/important-dates";
 import SpeakersPage from "./pages/speakers/speakers";
-import SubmissionPage from "./pages/submission/submission";
 import WorkshopPage from "./pages/workshop/workshop";
 
 import Navbar from "./ui/navbar/navbar";
 
 import styles from "./App.module.css";
 import PastIterationsPage from "./pages/past-iterations/past-iterations";
+import CallForPapersPage from "./pages/call-for-papers/call-for-papers";
 
 export default function App() {
   return (
@@ -63,7 +62,7 @@ export default function App() {
         <Route path="workshop-details" element={<WorkshopPage />} />
         <Route path="speakers" element={<SpeakersPage />} />
         <Route path="important-dates" element={<ImportantDatesPage />} />
-        <Route path="submission" element={<SubmissionPage />} />
+        <Route path="call-for-papers" element={<CallForPapersPage />} />
       </Routes>
 
       <footer className={styles["footer"]}>

@@ -34,13 +34,13 @@ export default function Navbar() {
           <Link to="/workshop-details">Workshop Details</Link>
         </li>
         <li>
+          <Link to="/call-for-papers">Call for Papers</Link>
+        </li>
+        <li>
           <Link to="/speakers">Speakers</Link>
         </li>
         <li>
           <Link to="/important-dates">Important Dates</Link>
-        </li>
-        <li>
-          <Link to="/submission">Submission</Link>
         </li>
         <li>
           <a href="/#/#organizing-committee">Organizing Committee</a>

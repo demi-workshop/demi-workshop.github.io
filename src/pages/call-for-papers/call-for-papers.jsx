@@ -1,7 +1,18 @@
-export default function SubmissionPage() {
+import { Link } from "react-router-dom";
+
+export default function CallForPapersPage() {
   return (
-    <section id="submission">
-      <h2>Submission</h2>
+    <section id="call-for-papers">
+      <h2>Call for Papers</h2>
+      <p>
+        We invite researchers, practitioners, and enthusiasts to submit original
+        contributions aligned with the themes outlined on our&nbsp;
+        <Link to="/workshop-details">workshop details page</Link>. Please review
+        the submission guidelines and ensure your work adheres to the specified
+        format and deadlines listed on the&nbsp;
+        <Link to="/important-dates">important dates page</Link>. Join us in
+        advancing discussions and innovation in this exciting area!
+      </p>
       <h3>How to Submit?</h3>
       <p>
         <strong className="u-color-secondary" style={{ fontWeight: 600 }}>
