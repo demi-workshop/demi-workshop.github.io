@@ -8,7 +8,7 @@ const getOrganizers = () => organizers;
 export default function OrganizersPage() {
   return (
     <section id="organizing-committee">
-      <h2>Organizing Committe</h2>
+      <h2>Organizing Committee</h2>
 
       <div className={styles["organizers__list"]}>
         {Object.keys(organizers).map((organizer) => (
