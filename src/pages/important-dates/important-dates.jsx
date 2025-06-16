@@ -3,9 +3,10 @@ import styles from "./style.module.css";
 
 const dates = [
   { title: "Paper Submission Begins", date: "12 May, 2025" },
-  { title: "Submission Deadline", date: "20 June, 2025" },
-  { title: "Paper Decision Notification", date: "15 July, 2025" },
-  { title: "Camera Ready Submission", date: "21 July, 2025" },
+  { title: "Submission Deadline", date: "28 June, 2025" },
+  { title: "Reviews Due", date: "12 July, 2025" },
+  { title: "Notification of Acceptance", date: "19 July, 2025" },
+  { title: "Camera Ready Submission", date: "6 August, 2025" },
   { title: "Workshop Day", date: "27 September, 2025" },
 ];
 
