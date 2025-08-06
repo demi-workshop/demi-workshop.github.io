@@ -28,7 +28,9 @@ export default function AboutPage() {
 					<li>
 						<span>
 							<strong style={{ fontWeight: 700 }}>25, Aug 2025 - </strong>
-							Accepted papers and technical committee anounced.
+							<a href="#/#accepted-papers">Accepted papers</a> and{" "}
+							<a href="#/#technical-committee">technical committee</a>{" "}
+							announced.
 						</span>
 					</li>
 				</ul>

@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import acceptedPapers from "../../data/accepted-papers.json";
 
 export default function CallForPapersPage() {
 	const location = useLocation();
@@ -90,28 +89,6 @@ export default function CallForPapersPage() {
 					bore all expenses, including costs for Azure cloud services as well as
 					for software development and support.
 				</p>
-			</section>
-
-			<section id="accepted-papers">
-				<h2>Accepted Papers</h2>
-				<ul>
-					{Object.keys(acceptedPapers).map((paper) => (
-						<li key={paper}>
-							<span>
-								<p
-									style={{
-										fontWeight: 700,
-										marginBottom: 0,
-										color: "var(--color-secondary)",
-									}}
-								>
-									{paper}
-								</p>
-								<p style={{ marginTop: 0 }}>{acceptedPapers[paper]}</p>
-							</span>
-						</li>
-					))}
-				</ul>
 			</section>
 		</>
 	);
