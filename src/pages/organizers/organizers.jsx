@@ -13,8 +13,8 @@ export default function OrganizersPage() {
 			<section id="accepted-papers">
 				<h2>Accepted Papers</h2>
 				<ul>
-					{Object.keys(acceptedPapers).map((paper) => (
-						<li key={paper}>
+					{acceptedPapers.map((item) => (
+						<li key={item["id"]}>
 							<span>
 								<p
 									style={{
@@ -23,9 +23,9 @@ export default function OrganizersPage() {
 										color: "var(--color-secondary)",
 									}}
 								>
-									{paper}
+									{item["name"]}
 								</p>
-								<p style={{ marginTop: 0 }}>{acceptedPapers[paper]}</p>
+								<p style={{ marginTop: 0 }}>{item["author"]}</p>
 							</span>
 						</li>
 					))}

@@ -1,0 +1,33 @@
+table td:first-child {
+	text-wrap: nowrap;
+	text-align: center;
+	font-weight: 500;
+}
+
+.inner-list {
+	list-style-type: none;
+}
+
+.inner-list * {
+	font-size: 0.8rem;
+	color: #1f2937;
+}
+
+.inner-list > li {
+	font-weight: 600;
+}
+
+.inner-list ul {
+	margin-top: 0;
+}
+
+.inner-list ul li {
+	list-style-type:circle;
+}
+
+.program-schedule strong {
+	font-weight: 600;
+}
+.program-schedule li {
+	margin: 0;
+}

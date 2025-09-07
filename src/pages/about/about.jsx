@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 
 import OrganizersPage from "../organizers/organizers";
 import SponsorsPage from "../sponsors/sponsors";
+import "./about.css";
+import accepted_paper from "../../data/accepted-papers.json";
 
 export default function AboutPage() {
 	const location = useLocation();
@@ -27,11 +29,119 @@ export default function AboutPage() {
 				<ul>
 					<li>
 						<span>
-							<strong style={{ fontWeight: 700 }}>25, Aug 2025 - </strong>
+							<strong style={{ fontWeight: 700 }}>06, Aug 2025 - </strong>
 							<a href="#/#accepted-papers">Accepted papers</a> and{" "}
 							<a href="#/#technical-committee">technical committee</a>{" "}
 							announced.
 						</span>
+					</li>
+					<li style={{ marginTop: -15 }}>
+						<span>
+							<a href="#/#program-outline">Workshop's program outline</a>{" "}
+							announced.
+						</span>
+					</li>
+				</ul>
+			</section>
+
+			<section id="program-outline">
+				<h2>Program Outline</h2>
+
+				<ul className="program-schedule">
+					<li>
+						<strong>8:00 to 8:15</strong> - Poster setup + welcome program
+					</li>
+					<li>
+						<strong>8:15 to 8:30</strong> - Welcome from the workshop chair
+					</li>
+					<li>
+						<strong>8:30 to 9:30</strong> - Keynote Speaker Session 1: Dr.
+						Mohammad Yaqub
+					</li>
+					<li>
+						<strong>9:30 to 10:00</strong> - Session 1: 2 Long Papers
+						<div className="inner-list">
+							<li>Long Papers:</li>
+							<ul>
+								{[7, 33].map((item) => (
+									<li key={item}>
+										{accepted_paper.find((data) => data["id"] == item)["name"]}
+									</li>
+								))}
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong>10:00 to 10:30</strong> - Coffee Break and Poster Session
+					</li>
+					<li>
+						<strong>10:30 to 12:30</strong> - Session 2: 2 Long Papers and 14
+						Spotlights
+						<div className="inner-list">
+							<li>Long Papers:</li>
+							<ul>
+								{[19, 25].map((item) => (
+									<li key={item}>
+										{accepted_paper.find((data) => data["id"] == item)["name"]}
+									</li>
+								))}
+							</ul>
+						</div>
+						<div className="inner-list">
+							<li>Spotlights:</li>
+							<ul>
+								{[5, 6, 10, 14, 15, 16, 18, 20, 21, 23, 27, 29, 30, 32].map(
+									(item) => (
+										<li key={item}>
+											{
+												accepted_paper.find((data) => data["id"] == item)[
+													"name"
+												]
+											}
+										</li>
+									)
+								)}
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong>12:30 to 1:30</strong> - Lunch and Poster Session
+					</li>
+					<li>
+						<strong>1:30 to 2:30</strong> - Session 3: 1 Long and 5 Spotlights
+						<div className="inner-list">
+							<li>Long Paper:</li>
+							<ul>
+								{[26].map((item) => (
+									<li key={item}>
+										{accepted_paper.find((data) => data["id"] == item)["name"]}
+									</li>
+								))}
+							</ul>
+						</div>
+						<div className="inner-list">
+							<li>Spotlights:</li>
+							<ul>
+								{[9, 12, 13, 31, 11].map((item) => (
+									<li key={item}>
+										{accepted_paper.find((data) => data["id"] == item)["name"]}
+									</li>
+								))}
+							</ul>
+						</div>
+					</li>
+					<li>
+						<strong>2:30 to 3:30</strong> - Keynote 2: Prof. KC Santosh
+					</li>
+					<li>
+						<strong>3:30 to 4:00</strong> - Coffee and Poster Session
+					</li>
+					<li>
+						<strong>4:00 to 5:00</strong> - Keynote 3: Prof. Stefanie Speidel
+					</li>
+					<li>
+						<strong>5:00 to 5:30</strong> - Thanks to sponsors, award and
+						closing ceremony
 					</li>
 				</ul>
 			</section>
