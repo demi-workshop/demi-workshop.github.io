@@ -55,11 +55,12 @@ export default function AboutPage() {
 						<strong>8:15 to 8:30</strong> - Welcome from the workshop chair
 					</li>
 					<li>
-						<strong>8:30 to 9:30</strong> - Keynote Speaker Session 1: Dr.
-						Mohammad Yaqub
+						<strong>
+							8:30 to 9:30 - Keynote Session 1: Dr. Mohammad Yaqub
+						</strong>
 					</li>
 					<li>
-						<strong>9:30 to 10:00</strong> - Session 1: Segmentation (2 Long
+						<strong>9:30 to 10:00 - Session 1: Segmentation</strong> (2 Long
 						Presentation)
 						<div className="inner-list">
 							<li>Long Papers:</li>
@@ -76,8 +77,11 @@ export default function AboutPage() {
 						<strong>10:00 to 10:30</strong> - Coffee Break and Poster Session
 					</li>
 					<li>
-						<strong>10:30 to 12:30</strong> - Session 2: Federated,
-						benchmarking, datasets, VLMs (2 Long Presentation and 14 Spotlights)
+						<strong>
+							10:30 to 12:30 - Session 2: Federated, benchmarking, datasets,
+							VLMs
+						</strong>{" "}
+						(2 Long Presentation and 14 Spotlights)
 						<div className="inner-list">
 							<li>Long Papers:</li>
 							<ul>
@@ -109,7 +113,7 @@ export default function AboutPage() {
 						<strong>12:30 to 1:30</strong> - Lunch and Poster Session
 					</li>
 					<li>
-						<strong>1:30 to 2:30</strong> - Session 3: Data Augmentation (1 Long
+						<strong>1:30 to 2:30 - Session 3: Data Augmentation</strong> (1 Long
 						Presentation and 5 Spotlights)
 						<div className="inner-list">
 							<li>Long Paper:</li>
@@ -133,13 +137,13 @@ export default function AboutPage() {
 						</div>
 					</li>
 					<li>
-						<strong>2:30 to 3:30</strong> - Keynote 2: Prof. KC Santosh
+						<strong>2:30 to 3:30 - Keynote 2: Prof. KC Santosh</strong>
 					</li>
 					<li>
 						<strong>3:30 to 4:00</strong> - Coffee and Poster Session
 					</li>
 					<li>
-						<strong>4:00 to 5:00</strong> - Keynote 3: Prof. Stefanie Speidel
+						<strong>4:00 to 5:00 - Keynote 3: Prof. Stefanie Speidel</strong>
 					</li>
 					<li>
 						<strong>5:00 to 5:30</strong> - Thanks to sponsors, award and
