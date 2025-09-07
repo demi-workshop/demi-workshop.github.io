@@ -59,7 +59,8 @@ export default function AboutPage() {
 						Mohammad Yaqub
 					</li>
 					<li>
-						<strong>9:30 to 10:00</strong> - Session 1: 2 Long Papers
+						<strong>9:30 to 10:00</strong> - Session 1: Segmentation (2 Long
+						Presentation)
 						<div className="inner-list">
 							<li>Long Papers:</li>
 							<ul>
@@ -75,8 +76,8 @@ export default function AboutPage() {
 						<strong>10:00 to 10:30</strong> - Coffee Break and Poster Session
 					</li>
 					<li>
-						<strong>10:30 to 12:30</strong> - Session 2: 2 Long Papers and 14
-						Spotlights
+						<strong>10:30 to 12:30</strong> - Session 2: Federated,
+						benchmarking, datasets, VLMs (2 Long Presentation and 14 Spotlights)
 						<div className="inner-list">
 							<li>Long Papers:</li>
 							<ul>
@@ -108,7 +109,8 @@ export default function AboutPage() {
 						<strong>12:30 to 1:30</strong> - Lunch and Poster Session
 					</li>
 					<li>
-						<strong>1:30 to 2:30</strong> - Session 3: 1 Long and 5 Spotlights
+						<strong>1:30 to 2:30</strong> - Session 3: Data Augmentation (1 Long
+						Presentation and 5 Spotlights)
 						<div className="inner-list">
 							<li>Long Paper:</li>
 							<ul>
