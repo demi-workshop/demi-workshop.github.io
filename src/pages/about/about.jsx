@@ -24,7 +24,7 @@ export default function AboutPage() {
 
 	return (
 		<>
-			<section id="recent-updates">
+			{/* <section id="recent-updates">
 				<h2>Recent Updates</h2>
 				<ul>
 					<li>
@@ -42,115 +42,7 @@ export default function AboutPage() {
 						</span>
 					</li>
 				</ul>
-			</section>
-
-			<section id="program-outline">
-				<h2>Program Outline</h2>
-
-				<ul className="program-schedule">
-					<li>
-						<strong>8:00 to 8:15</strong> - Poster setup + welcome program
-					</li>
-					<li>
-						<strong>8:15 to 8:30</strong> - Welcome from the workshop chair
-					</li>
-					<li>
-						<strong>
-							8:30 to 9:30 - Keynote Session 1: Dr. Mohammad Yaqub
-						</strong>
-					</li>
-					<li>
-						<strong>9:30 to 10:00 - Session 1: Segmentation</strong> (2 Long
-						Presentation)
-						<div className="inner-list">
-							<li>Long Papers:</li>
-							<ul>
-								{[7, 33].map((item) => (
-									<li key={item}>
-										{accepted_paper.find((data) => data["id"] == item)["name"]}
-									</li>
-								))}
-							</ul>
-						</div>
-					</li>
-					<li>
-						<strong>10:00 to 10:30</strong> - Coffee Break and Poster Session
-					</li>
-					<li>
-						<strong>
-							10:30 to 12:30 - Session 2: Federated, benchmarking, datasets,
-							VLMs
-						</strong>{" "}
-						(2 Long Presentation and 14 Spotlights)
-						<div className="inner-list">
-							<li>Long Papers:</li>
-							<ul>
-								{[19, 25].map((item) => (
-									<li key={item}>
-										{accepted_paper.find((data) => data["id"] == item)["name"]}
-									</li>
-								))}
-							</ul>
-						</div>
-						<div className="inner-list">
-							<li>Spotlights:</li>
-							<ul>
-								{[5, 6, 10, 14, 15, 16, 18, 20, 21, 23, 27, 29, 30, 32].map(
-									(item) => (
-										<li key={item}>
-											{
-												accepted_paper.find((data) => data["id"] == item)[
-													"name"
-												]
-											}
-										</li>
-									)
-								)}
-							</ul>
-						</div>
-					</li>
-					<li>
-						<strong>12:30 to 1:30</strong> - Lunch and Poster Session
-					</li>
-					<li>
-						<strong>1:30 to 2:30 - Session 3: Data Augmentation</strong> (1 Long
-						Presentation and 5 Spotlights)
-						<div className="inner-list">
-							<li>Long Paper:</li>
-							<ul>
-								{[26].map((item) => (
-									<li key={item}>
-										{accepted_paper.find((data) => data["id"] == item)["name"]}
-									</li>
-								))}
-							</ul>
-						</div>
-						<div className="inner-list">
-							<li>Spotlights:</li>
-							<ul>
-								{[9, 12, 13, 31, 11].map((item) => (
-									<li key={item}>
-										{accepted_paper.find((data) => data["id"] == item)["name"]}
-									</li>
-								))}
-							</ul>
-						</div>
-					</li>
-					<li>
-						<strong>2:30 to 3:30 - Keynote 2: Prof. KC Santosh</strong>
-					</li>
-					<li>
-						<strong>3:30 to 4:00</strong> - Coffee and Poster Session
-					</li>
-					<li>
-						<strong>4:00 to 5:00 - Keynote 3: Prof. Stefanie Speidel</strong>
-					</li>
-					<li>
-						<strong>5:00 to 5:30</strong> - Thanks to sponsors, award and
-						closing ceremony
-					</li>
-				</ul>
-			</section>
+			</section> */}
 
 			<section id="about-demi">
 				<h2>About DEMI</h2>

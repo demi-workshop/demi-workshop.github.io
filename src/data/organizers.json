@@ -3,10 +3,6 @@
     "title": "University of Aberdeen, UK",
     "image": "/organizers/binod.png"
   },
-  "Anita Rau": {
-    "title": "Stanford University, USA",
-    "image": "/organizers/anita.png"
-  },
   "Razvan Caramalau": {
     "title": "Digital Technologies Medtronic, UK",
     "image": "/organizers/razvan.png"
@@ -30,5 +26,9 @@
   "Danail Stoyanov": {
     "title": "University College, London, UK",
     "image": "/organizers/danail.png"
-  }
+  },
+	"KC (Casey) Santosh": {
+    "title": "University of South Dakota, USA",
+    "image": "/organizers/santosh.png"
+	}
 }

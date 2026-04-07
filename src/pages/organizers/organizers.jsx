@@ -10,27 +10,6 @@ const getOrganizers = () => organizers;
 export default function OrganizersPage() {
 	return (
 		<>
-			<section id="accepted-papers">
-				<h2>Accepted Papers</h2>
-				<ul>
-					{acceptedPapers.map((item) => (
-						<li key={item["id"]}>
-							<span>
-								<p
-									style={{
-										fontWeight: 700,
-										marginBottom: 0,
-										color: "var(--color-secondary)",
-									}}
-								>
-									{item["name"]}
-								</p>
-								<p style={{ marginTop: 0 }}>{item["author"]}</p>
-							</span>
-						</li>
-					))}
-				</ul>
-			</section>
 			<section id="organizing-committee">
 				<h2>Organizing Committee</h2>
 
@@ -49,23 +28,16 @@ export default function OrganizersPage() {
 					Web and Publicity Chair
 				</h2>
 				<ul>
-					<li style={{ marginBottom: "0.25rem" }}>
-						<a href="https://anjuchhetri.com.np/">
-							Anju Chhetri @ NAAMII, Nepal
-						</a>
-					</li>
-					<li style={{ marginBottom: "0.25rem" }}>
-						<a href="https://www.naamii.org.np/teams/sandesh-pokhrel/">
-							Sandesh Pokhrel @ NAAMII, Nepal
-						</a>
-					</li>
 					<li>
 						<a href="https://niyoj.github.io/">Niyoj Oli @ NAAMII, Nepal</a>
+					</li>
+					<li>
+						<a href="https://niyoj.github.io/">Aminu Lawal @ University of Aberdeen, UK</a>
 					</li>
 				</ul>
 			</section>
 
-			<section id="technical-committee">
+			{/* <section id="technical-committee">
 				<h2>Technical Program Committee</h2>
 				<ul>
 					<div style={{ visibility: "hidden", height: "1rem" }} />
@@ -78,7 +50,7 @@ export default function OrganizersPage() {
 						</li>
 					))}
 				</ul>
-			</section>
+			</section> */}
 		</>
 	);
 }

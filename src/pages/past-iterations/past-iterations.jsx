@@ -150,6 +150,11 @@ export default function PastIterationsPage() {
       <h3>See also</h3>
       <ul>
         <li style={{ marginBottom: "0.25rem" }}>
+          <a href="https://demi-workshop.github.io/demi-workshop2025.github.io/">
+            DEMI @ MICCAI-2025
+          </a>
+        </li>
+        <li style={{ marginBottom: "0.25rem" }}>
           <a href="https://demi-workshop.github.io/demi-workshop2024.github.io/">
             DEMI @ MICCAI-2024
           </a>

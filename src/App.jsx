@@ -28,13 +28,13 @@ export default function App() {
 
         <div className={styles["header__info"]}>
           <p>
-            3<sup>rd</sup> Workshop in{" "}
+            4<sup>th</sup> Workshop in{" "}
             <span className="u-color-primary">
               Data Engineering in Medical Imaging (DEMI)
             </span>
           </p>
           <p>
-            <span className="u-color-secondary">MICCAI-2025 Workshop</span>
+            <span className="u-color-secondary">MICCAI-2026 Workshop</span>
             <span
               className="u-color-primary"
               style={{ margin: "0 0.25rem 0 0.25rem" }}
@@ -42,13 +42,13 @@ export default function App() {
               &middot;
             </span>
             <span>
-              27<sup>th</sup> September, 2025
+              27<sup>th</sup> September, 2026
             </span>
           </p>
         </div>
 
         <div className={[styles["header__miccai"]]}>
-          <img src="/miccai2025.png" alt="A workshop at MICCAI 2025" />
+          <img src="/miccai.png" alt="A workshop at MICCAI 2026" />
         </div>
       </header>
 
@@ -62,17 +62,17 @@ export default function App() {
         <Route path="workshop-details" element={<WorkshopPage />} />
         <Route path="speakers" element={<SpeakersPage />} />
         <Route path="important-dates" element={<ImportantDatesPage />} />
-        <Route path="call-for-papers" element={<CallForPapersPage />} />
+        {/* <Route path="call-for-papers" element={<CallForPapersPage />} /> */}
       </Routes>
 
       <footer className={styles["footer"]}>
         <div className={styles["footer__miccai"]}>
           <h4 className="u-color-secondary u-bolder">A workshop at</h4>
-          <img src="/miccai2025.png" alt="MICCAI 2025 logo" />
+          <img src="/miccai.png" alt="MICCAI 2026 logo" />
         </div>
 
         <div className={styles["footer__copyright"]}>
-          <p>&copy; 2025 DEMI @ MICCAI 2025</p>
+          <p>&copy; 2026 DEMI @ MICCAI 2026</p>
         </div>
       </footer>
     </HashRouter>
