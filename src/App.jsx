@@ -15,6 +15,7 @@ import Navbar from "./ui/navbar/navbar";
 import styles from "./App.module.css";
 import PastIterationsPage from "./pages/past-iterations/past-iterations";
 import CallForPapersPage from "./pages/call-for-papers/call-for-papers";
+import SponsorsPage from "./pages/sponsors/sponsors";
 
 export default function App() {
   return (

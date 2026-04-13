@@ -7,14 +7,14 @@ export default function SpeakersPage() {
     <section id="speakers">
       <h2>Our Speakers</h2>
       <div className={styles["speakers__list"]}>
-        {Object.keys(speakers).map((speaker) => (
+        {/* {Object.keys(speakers).map((speaker) => (
           <SpeakerCard
             key={speaker}
             imgURL={speakers[speaker]["image"]}
             name={speaker}
             bio={speakers[speaker]["bio"]}
           />
-        ))}
+        ))} */}
       </div>
       <p
         style={{
@@ -25,7 +25,7 @@ export default function SpeakersPage() {
           marginTop: "2rem"
         }}
       >
-        More speakers will be announced shortly. Check back soon for updates!
+        Speakers will be announced shortly. Check back soon for updates!
       </p>
       <p></p>
     </section>

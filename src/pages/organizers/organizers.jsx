@@ -29,10 +29,16 @@ export default function OrganizersPage() {
 				</h2>
 				<ul>
 					<li>
-						<a href="https://niyoj.github.io/">Niyoj Oli @ NAAMII, Nepal</a>
+						<a href="https://www.linkedin.com/in/niyoj">Niyoj Oli @ NAAMII, Nepal</a>
 					</li>
 					<li>
-						<a href="https://niyoj.github.io/">Aminu Lawal @ University of Aberdeen, UK</a>
+						<a href="https://www.linkedin.com/in/aminu-lawal/">Aminu Lawal @ University of Aberdeen, UK</a>
+					</li>
+					<li>
+						<a href="https://alinadevkota.github.io/">Alina Devkota @ West Virginia University, USA</a>
+					</li>
+					<li>
+						<a href="https://sites.google.com/view/jacob-thrasher/home">Jacob Thrasher @ West Virginia University, USA</a>
 					</li>
 				</ul>
 			</section>

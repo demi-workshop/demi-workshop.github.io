@@ -38,9 +38,9 @@ export default function Navbar() {
         <li className={path === "/workshop-details" ? styles["link--active"] : ""}>
           <Link to="/workshop-details">Workshop Details</Link>
         </li>
-        <li className={path === "/call-for-papers" ? styles["link--active"] : ""}>
+        {/* <li className={path === "/call-for-papers" ? styles["link--active"] : ""}>
           <Link to="/call-for-papers">Call for Papers</Link>
-        </li>
+        </li> */}
         <li className={path === "/speakers" ? styles["link--active"] : ""}>
           <Link to="/speakers">Speakers</Link>
         </li>
