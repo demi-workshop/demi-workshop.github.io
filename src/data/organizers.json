@@ -3,6 +3,10 @@
     "title": "University of Aberdeen, UK",
     "image": "/organizers/binod.png"
   },
+  "Prashnna Gyawali": {
+    "title": "West Virginia University, USA",
+    "image": "/organizers/prashnna.png"
+  },
   "Razvan Caramalau": {
     "title": "Digital Technologies Medtronic, UK",
     "image": "/organizers/razvan.png"
@@ -19,16 +23,12 @@
     "title": "University of Oxford, UK",
     "image": "/organizers/ana.png"
   },
-  "Prashnna Gyawali": {
-    "title": "West Virginia University, USA",
-    "image": "/organizers/prashnna.png"
-  },
-  "Danail Stoyanov": {
-    "title": "University College, London, UK",
-    "image": "/organizers/danail.png"
-  },
 	"KC (Casey) Santosh": {
     "title": "University of South Dakota, USA",
     "image": "/organizers/santosh.png"
-	}
+	},
+  "Danail Stoyanov": {
+    "title": "University College, London, UK",
+    "image": "/organizers/danail.png"
+  }
 }

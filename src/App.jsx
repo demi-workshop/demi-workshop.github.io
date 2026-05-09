@@ -43,7 +43,7 @@ export default function App() {
               &middot;
             </span>
             <span>
-              27<sup>th</sup> September, 2026
+              1<sup>st</sup> October, 2026
             </span>
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function App() {
         <Route path="workshop-details" element={<WorkshopPage />} />
         <Route path="speakers" element={<SpeakersPage />} />
         <Route path="important-dates" element={<ImportantDatesPage />} />
-        {/* <Route path="call-for-papers" element={<CallForPapersPage />} /> */}
+        <Route path="call-for-papers" element={<CallForPapersPage />} />
       </Routes>
 
       <footer className={styles["footer"]}>
