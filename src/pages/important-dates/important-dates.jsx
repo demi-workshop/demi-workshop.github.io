@@ -1,21 +1,21 @@
 import styles from "./style.module.css";
 
 const dates = [
-	{ title: "Paper Submission Begins", date: "8 May, 2025" },
+	{ title: "Paper Submission Begins", date: "8 May, 2026" },
 	{
 		title: "Submission Deadline",
-		date: "18 June, 2025",
+		date: "18 June, 2026",
 	},
-	{ title: "Reviews Due", date: "16 July, 2025" },
+	{ title: "Reviews Due", date: "16 July, 2026" },
 	{
 		title: "Notification of Acceptance",
-		date: "23 July, 2025",
+		date: "23 July, 2026",
 	},
 	{
 		title: "Camera Ready Submission",
-		date: "6 August, 2025",
+		date: "6 August, 2026",
 	},
-	{ title: "Workshop Day", date: "1 October, 2025" },
+	{ title: "Workshop Day", date: "1 October, 2026" },
 ];
 
 export default function ImportantDatesPage() {
