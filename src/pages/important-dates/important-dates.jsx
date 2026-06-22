@@ -4,16 +4,23 @@ const dates = [
 	{ title: "Paper Submission Begins", date: "8 May, 2026" },
 	{
 		title: "Submission Deadline",
-		date: "18 June, 2026",
+		old_date: "18 June, 2026",
+		date: "2 July, 2026",
 	},
-	{ title: "Reviews Due", date: "16 July, 2026" },
+	{ 
+		title: "Reviews Due", 
+		old_date: "16 July, 2026",
+		date: "23 July, 2023",
+	},
 	{
 		title: "Notification of Acceptance",
-		date: "23 July, 2026",
+		old_date: "23 July, 2026",
+		date: "31 July, 2026"
 	},
 	{
 		title: "Camera Ready Submission",
-		date: "6 August, 2026",
+		old_date: "6 August, 2026",
+		date: "13 August, 2026",
 	},
 	{ title: "Workshop Day", date: "1 October, 2026" },
 ];

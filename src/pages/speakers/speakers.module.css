@@ -2,8 +2,34 @@
   margin-top: 2rem;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: top;
+	justify-content: center;
 
   gap: 1rem;
+}
+
+.speaker {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid var(--color-primary);
+	padding: 0.5rem;
+}
+
+.speaker p {
+	margin: 0;
+	width: 250px;
+	font-size: 0.8rem;
+}
+
+.speaker img {
+	width: 250px;
+	height: 250px;
+}
+
+.speaker .speaker__name {
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--color-primary);
+	margin-top: 0.5rem;
 }
