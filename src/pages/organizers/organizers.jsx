@@ -20,6 +20,7 @@ export default function OrganizersPage() {
 							photoURL={organizers[organizer]["image"]}
 							name={organizer}
 							title={organizers[organizer]["title"] ?? "DEMI @ MICCAI 2025"}
+							role={organizers[organizer]["role"]}
 						/>
 					))}
 				</div>

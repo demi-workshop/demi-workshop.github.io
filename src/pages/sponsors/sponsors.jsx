@@ -5,12 +5,14 @@ export default function SponsorsPage() {
 		<section id="sponsors">
 			<h2>Sponsors</h2>
 
-			{/* <div className={styles["sponsors__list"]}>
-        <img
-          src="/sponsors/mva.png"
-          alt="Logo of medical volume annotator sponsor of DEMI"
-        />
-      </div> */}
+			<div className={styles["sponsors__list"]}>
+				<a href="https://nvidia.com" target="_blank">
+					<img
+						src="/sponsors/nvidia.png"
+						alt="Logo of NVIDIA sponsor of DEMI"
+					/>
+				</a>
+			</div>
 
 			<p>
 				We are currently inviting academic and industrial partners to sponsor

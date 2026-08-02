@@ -1,34 +1,42 @@
 {
   "Binod Bhattarai": {
     "title": "University of Aberdeen, UK",
-    "image": "/organizers/binod.png"
+    "image": "/organizers/binod.png",
+		"role": "General Chair"
   },
   "Prashnna Gyawali": {
     "title": "West Virginia University, USA",
-    "image": "/organizers/prashnna.png"
+    "image": "/organizers/prashnna.png",
+		"role": "General Co-chair"
   },
   "Razvan Caramalau": {
     "title": "Digital Technologies Medtronic, UK",
-    "image": "/organizers/razvan.png"
+    "image": "/organizers/razvan.png",
+		"role": "Program Chair"
   },
   "Annika Reinke": {
     "title": "German Cancer Research Institute, Germany",
-    "image": "/organizers/annika.png"
+    "image": "/organizers/annika.png",
+		"role": "Program Chair"
   },
   "Anh Nguyen": {
     "title": "University of Liverpool, UK",
-    "image": "/organizers/anh.png"
+    "image": "/organizers/anh.png",
+		"role": "Program Chair"
   },
   "Ana Namburete": {
     "title": "University of Oxford, UK",
-    "image": "/organizers/ana.png"
+    "image": "/organizers/ana.png",
+		"role": "Program Chair"
   },
 	"Casey Santosh": {
     "title": "Oregon Institute of Technology (Oregon Tech)",
-    "image": "/organizers/santosh.png"
+    "image": "/organizers/santosh.png",
+		"role": "Program Chair"
 	},
   "Danail Stoyanov": {
     "title": "University College, London, UK",
-    "image": "/organizers/danail.png"
+    "image": "/organizers/danail.png",
+		"role": "Program Chair"
   }
 }
