@@ -12,6 +12,12 @@ export default function SponsorsPage() {
 						alt="Logo of NVIDIA sponsor of DEMI"
 					/>
 				</a>
+				<a href="https://fogsphere.com" target="_blank">
+					<img
+						src="/sponsors/fogsphere.png"
+						alt="Logo of Fogsphere sponsor of DEMI"
+					/>
+				</a>
 			</div>
 
 			<p>
