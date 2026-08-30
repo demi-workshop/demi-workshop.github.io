@@ -44,7 +44,7 @@ export default function OrganizersPage() {
 				</ul>
 			</section>
 
-			{/* <section id="technical-committee">
+			<section id="technical-committee">
 				<h2>Technical Program Committee</h2>
 				<ul>
 					<div style={{ visibility: "hidden", height: "1rem" }} />
@@ -57,7 +57,7 @@ export default function OrganizersPage() {
 						</li>
 					))}
 				</ul>
-			</section> */}
+			</section>
 		</>
 	);
 }
